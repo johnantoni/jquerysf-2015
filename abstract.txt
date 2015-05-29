@@ -1,0 +1,15 @@
+3. What can you do with an AST? A whole lot. Most of the things you can do are
+terrible hacks but sometimes there is no other way. This talk will cover some
+applications of ASTs to solve problems when there is no other way.
+
+Modules covered:
+
+* browserify
+* falafel
+* coverify
+* insert-module-globals
+* static-module
+* brfs
+* glslify
+* static-eval
+* live-patch
