@@ -39,6 +39,15 @@ console.log(parse(src));
 ```
 
 ---
+# DEMO
+
+esprima/acorn demo
+
+```
+cd example/ast
+```
+
+---
 # falafel
 
 walk and modify an AST
@@ -74,9 +83,27 @@ usual AST properties plus:
 * `node.update()`
 
 ---
+# DEMO
+
+falafel demo
+
+```
+cd example/falafel
+```
+
+---
 # browserify
 
 looks for `require()` calls to build a bundle
+
+---
+# DEMO
+
+browserify demo
+
+```
+cd example/browserify
+```
 
 ---
 # insert-module-globals
@@ -93,6 +120,15 @@ looks for:
 # brfs
 
 looks for `fs.readFileSync()` calls to inline
+
+---
+# DEMO
+
+brfs demo
+
+```
+cd example/brfs
+```
 
 ---
 # static-module
@@ -143,12 +179,30 @@ process.stdin.pipe(sm).pipe(process.stdout);
 ```
 
 ---
+# DEMO
+
+static-module demo
+
+```
+cd example/sm
+```
+
+---
 # bulkify
 
 ``` js
 var bulk = require('bulk-require');
 var modules = bulk(__dirname, [ 'pages/*.js', 'lib/*.js' ]);
 console.log(modules);
+```
+
+---
+# DEMO
+
+bulkify demo
+
+```
+cd example/bulk
 ```
 
 ---
@@ -178,6 +232,15 @@ evaluate static expressions by walking the AST
 ```
 
 ---
+# DEMO
+
+static-eval demo
+
+```
+cd example/eval
+```
+
+---
 # coverify
 
 wraps every expression and statement!
@@ -197,11 +260,29 @@ wrap(11, console.log)(wrap(9, x) / wrap(10, y)); wrap(12);
 ```
 
 ---
+# DEMO
+
+coverify demo
+
+```
+cd example/coverify
+```
+
+---
 # live-patch
 
 update a running program live
 
 by diffing and patching the AST
+
+---
+# DEMO
+
+live-patch demo
+
+```
+cd example/patch
+```
 
 ---
 
