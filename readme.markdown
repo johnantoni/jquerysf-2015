@@ -97,7 +97,9 @@ looks for `fs.readFileSync()` calls to inline
 ---
 # static-module
 
-define interfaces for 
+define statically inlined module interfaces
+
+* very handy for "universal" javascript
 
 ---
 # static-module
@@ -138,6 +140,15 @@ var sm = staticModule({
     }
 }, { vars: { __dirname: __dirname } });
 process.stdin.pipe(sm).pipe(process.stdout);
+```
+
+---
+# bulkify
+
+``` js
+var bulk = require('bulk-require');
+var modules = bulk(__dirname, [ 'pages/*.js', 'lib/*.js' ]);
+console.log(modules);
 ```
 
 ---
